@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 MAINTAINER Francesco Vezzoli <fvezzoli@iz2vtw.net>
 
-RUN apk add --no-cache --update unbound
+RUN apk add --no-cache --update unbound openssl
 
 COPY unbound.conf /etc/unbound/unbound.conf
 
